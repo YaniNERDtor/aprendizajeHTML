@@ -61,5 +61,71 @@
 <br>
 <input type="radio" name="salsas" id="guacamole" value="guacamole">
 <label for="guacamole">Salsa de Guacamole</label>
+<br>
+<h1>Materias a cursar</h1>
+<input type="checkbox" name="materias" id="first" value="Matemática I">
+<label for="materias">Matemática I</label>
+<br>
+<input type="checkbox" name="materias" id="first" value="Lógica Computacional">
+<label for="materias">Lógica Computacional</label>
+<br>
+<input type="checkbox" name="materias" id="first" value="Programación Orientada a Objetos">
+<label for="materias">Programación Orientada a Objetos (POO)</label>
+
+<h1>Select</h1>
+<label for="tacos">Qué contendrá su orden</label>
+<select name="tacos" id="tacos">
+<option value="suadero">Suadero</option>
+<option value="pastor">Pastor</option>
+<option value="campechanos">Campechanos</option>
+<option value="tripa">Tripa</option>
+</select>
+<br>
+<h1>Select con Input</h1>
+<br>
+<label for="gaseosa">Elegí tu gaseosa</label>
+<input list= "gaseosa">
+<datalist id="gaseosa">
+<option value="Coca Cola"></option>
+<option value="Sprite"></option>
+<option value="Fanta"></option>
+<option value="Ser"></option>
+
+</datalist>
+
+<h1>Input de Fecha</h1>
+<br>
+<input type="date" id="fecha1" name="fecha1"><br><br>
+<input type="datetime-local" name="fecha2" id="fecha2"><br><br>
+<input type="week" name="fecha3" id="fecha3"><br><br>
+<input type="time" name="fecha4" id="fecha4"><br><br>
+<input type="month" name="fecha5" id="fecha5"><br><br>
+<br>
+
+<h1>Input de archivo</h1>
+<input type="file" id="archivo1" name="archivo1" multiple><br><br>
+
+<h1>Input de color</h1>
+<input type="color" id="color" name="color1"><br><br>
+
+<h1>Input de Rango</h1>
+<label for="vol">Volumen (entre 0 y 50)</label>
+<input type="range" name="vol1" id="vol" min="0" max="50" value="0">
+<br><br>
+<h1>Input de Botón</h1>
+<input type="reset"><br><br>
+<input type="submit"><br><br>
+<input type="button" name="boton1" id="boton1" value="Bienvenida" onclick="alert('Bienvenidos al Canal');"> <br>
+
+<h1>Formularios</h1>
+<form action="/accion.js" id="form1" method="post">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre">
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+    </form>
+
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido" name="apellido" form="form1"><br>
 </body>
 </html>
